@@ -1,0 +1,41 @@
+[
+  {
+    "label": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+    "input": {
+      "idade": 50,
+      "fcrep": 70,
+      "fcpico": 160
+    },
+    "expected": {
+      "raw": {
+        "classic": 170,
+        "tanaka": 173,
+        "ci": 0.9
+      },
+      "tol": 0.001
+    },
+    "originalInput": {
+      "idade": 50,
+      "fcrep": 70,
+      "fcpico": 160
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+    "input": {
+      "idade": 50,
+      "fcrep": 70,
+      "fcpico": 140
+    },
+    "expected": {
+      "level": "high"
+    },
+    "originalInput": {
+      "idade": 50,
+      "fcrep": 70,
+      "fcpico": 140
+    },
+    "expandedZeroOptions": []
+  }
+]

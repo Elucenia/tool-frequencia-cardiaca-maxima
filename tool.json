@@ -1,0 +1,145 @@
+{
+  "tool": {
+    "id": "frequencia-cardiaca-maxima",
+    "title": "FC máxima prevista e índice cronotrópico",
+    "short": "Resposta cronotrópica no esforço",
+    "spec": [
+      "medicina-esportiva",
+      "cardiologia"
+    ],
+    "tier": 1,
+    "desc": "Calcule a frequência cardíaca máxima prevista (220 − idade e Tanaka), o percentual atingido e o índice cronotrópico, para avaliar incompetência cronotrópica.",
+    "lead": "Calcula a FC máxima prevista, o percentual atingido no esforço e o índice cronotrópico, usado para identificar incompetência cronotrópica.",
+    "fields": [
+      [
+        "idade",
+        "Idade",
+        "num",
+        {
+          "min": 10,
+          "max": 100,
+          "unit": "anos",
+          "ph": "50"
+        }
+      ],
+      [
+        "fcrep",
+        "FC de repouso",
+        "num",
+        {
+          "min": 30,
+          "max": 150,
+          "unit": "bpm",
+          "ph": "70"
+        }
+      ],
+      [
+        "fcpico",
+        "FC no pico do esforço",
+        "num",
+        {
+          "min": 50,
+          "max": 230,
+          "unit": "bpm",
+          "ph": "160"
+        }
+      ]
+    ],
+    "formula": "<ul><li><strong>FC máxima (clássica):</strong> 220 − idade</li><li><strong>FC máxima (Tanaka):</strong> 208 − 0,7 × idade</li><li><strong>% atingido:</strong> FC pico ÷ FC máxima × 100</li><li><strong>Índice cronotrópico:</strong> (FC pico − FC repouso) ÷ (FC máxima − FC repouso)</li></ul>",
+    "table": [
+      [
+        "Achado",
+        "Interpretação"
+      ],
+      [
+        "FC pico ≥ 85% da prevista",
+        "Teste considerado eficaz (submáximo atingido)"
+      ],
+      [
+        "Índice cronotrópico &lt; 0,80",
+        "Incompetência cronotrópica (sem betabloqueador)"
+      ],
+      [
+        "Índice cronotrópico &lt; 0,62",
+        "Incompetência cronotrópica em uso de betabloqueador"
+      ]
+    ],
+    "tips": [
+      "Não atingir 85% da FC prevista reduz a sensibilidade do teste para isquemia: registre o motivo da interrupção.",
+      "A incompetência cronotrópica é marcador independente de mortalidade, mesmo sem isquemia.",
+      "A fórmula de Tanaka é mais precisa acima dos 40 anos; 220 − idade subestima a FC máxima em idosos.",
+      "Betabloqueador reduz a FC pico: interprete o índice com o limite ajustado ou suspenda a medicação quando o objetivo for diagnóstico."
+    ],
+    "sources": [
+      [
+        "Tanaka H, Monahan KD, Seals DR. Age-predicted maximal heart rate revisited. J Am Coll Cardiol, 2001.",
+        "https://doi.org/10.1016/S0735-1097(00)01054-8"
+      ],
+      [
+        "Brubaker PH, Kitzman DW. Chronotropic incompetence: causes, consequences, and management. Circulation, 2011.",
+        "https://doi.org/10.1161/CIRCULATIONAHA.110.940577"
+      ]
+    ],
+    "cases": [
+      [
+        "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+        {
+          "idade": 50,
+          "fcrep": 70,
+          "fcpico": 160
+        },
+        {
+          "raw": {
+            "classic": 170,
+            "tanaka": 173,
+            "ci": 0.9
+          },
+          "tol": 0.001
+        }
+      ],
+      [
+        "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+        {
+          "idade": 50,
+          "fcrep": 70,
+          "fcpico": 140
+        },
+        {
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "cardiologia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cirurgia-sentidos",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cardiologia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 2,
+      "passed": 2,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cardiologia.php",
+    "sha256": "ed536451dd02922a7f840f2c9ce575be004cddb227f60426b7a52cf1b0e94ec0",
+    "bytes": 61303
+  },
+  "clinicalValidation": "not-performed"
+}
