@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-frequencia-cardiaca-maxima",
   "version": "0.1.0",
-  "description": "FC máxima prevista e índice cronotrópico · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "FC máxima prevista e índice cronotrópico · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
