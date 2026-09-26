@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-frequencia-cardiaca-maxima · Elucenia · https://github.com/Elucenia/tool-frequencia-cardiaca-maxima
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"frequencia-cardiaca-maxima","title":"FC máxima prevista e índice cronotrópico","fields":[["idade","Idade","num",{"min":10,"max":100,"unit":"anos","ph":"50"}],["fcrep","FC de repouso","num",{"min":30,"max":150,"unit":"bpm","ph":"70"}],["fcpico","FC no pico do esforço","num",{"min":50,"max":230,"unit":"bpm","ph":"160"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
