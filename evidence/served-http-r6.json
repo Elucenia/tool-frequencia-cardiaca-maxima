@@ -1,0 +1,522 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "frequencia-cardiaca-maxima",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/frequencia-cardiaca-maxima/calculator.js",
+    "sha256": "8033545ea242a3168d88463ba8ecf8c7b96be52a64944a8f885d1fdb55f9461d",
+    "bytes": 6458
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 2,
+    "replayed": 2,
+    "passed": 2,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "frequencia-cardiaca-maxima",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+      "originalInput": {
+        "idade": 50,
+        "fcrep": 70,
+        "fcpico": 160
+      },
+      "input": {
+        "idade": 50,
+        "fcrep": 70,
+        "fcpico": 160
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "classic": 170,
+          "tanaka": 173,
+          "ci": 0.9
+        },
+        "tol": 0.001
+      },
+      "recordedResult": {
+        "main": [
+          "94",
+          "%"
+        ],
+        "label": "da FC máxima prevista (220 − idade)",
+        "raw": {
+          "classic": 170,
+          "tanaka": 173,
+          "pct": 94.11764705882352,
+          "ci": 0.9
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/frequencia-cardiaca-maxima/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade": 50,
+            "fcrep": 70,
+            "fcpico": 160
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/frequencia-cardiaca-maxima/calculate",
+          "startedAt": "2026-10-05T17:37:59.962Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "frequencia-cardiaca-maxima",
+              "main": [
+                "94",
+                "%"
+              ],
+              "label": "da FC máxima prevista (220 − idade)",
+              "raw": {
+                "classic": 170,
+                "tanaka": 173,
+                "pct": 94.11764705882352,
+                "ci": 0.9
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "644f69c885aed22484a0a395ee4e72e6e82be5e53a59c47deb5c10f6de19cc65",
+          "bytes": 218,
+          "elapsedMs": 3.3460999999952037
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/frequencia-cardiaca-maxima/calculate",
+        "startedAt": "2026-10-05T17:37:59.962Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "frequencia-cardiaca-maxima",
+            "main": [
+              "94",
+              "%"
+            ],
+            "label": "da FC máxima prevista (220 − idade)",
+            "raw": {
+              "classic": 170,
+              "tanaka": 173,
+              "pct": 94.11764705882352,
+              "ci": 0.9
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "644f69c885aed22484a0a395ee4e72e6e82be5e53a59c47deb5c10f6de19cc65",
+        "bytes": 218,
+        "elapsedMs": 3.3460999999952037
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.classic",
+            "expected": 170,
+            "obtained": 170,
+            "tolerance": 0.001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.tanaka",
+            "expected": 173,
+            "obtained": 173,
+            "tolerance": 0.001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.ci",
+            "expected": 0.9,
+            "obtained": 0.9,
+            "tolerance": 0.001,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.classic",
+            "expected": 170,
+            "obtained": 170,
+            "tolerance": 1.7e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tanaka",
+            "expected": 173,
+            "obtained": 173,
+            "tolerance": 1.73e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pct",
+            "expected": 94.11764705882352,
+            "obtained": 94.11764705882352,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ci",
+            "expected": 0.9,
+            "obtained": 0.9,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "94",
+            "obtained": "94",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "%",
+            "obtained": "%",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "frequencia-cardiaca-maxima",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+      "originalInput": {
+        "idade": 50,
+        "fcrep": 70,
+        "fcpico": 140
+      },
+      "input": {
+        "idade": 50,
+        "fcrep": 70,
+        "fcpico": 140
+      },
+      "amendments": [],
+      "expected": {
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "82",
+          "%"
+        ],
+        "label": "da FC máxima prevista (220 − idade)",
+        "raw": {
+          "classic": 170,
+          "tanaka": 173,
+          "pct": 82.35294117647058,
+          "ci": 0.7
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/frequencia-cardiaca-maxima/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "idade": 50,
+            "fcrep": 70,
+            "fcpico": 140
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/frequencia-cardiaca-maxima/calculate",
+          "startedAt": "2026-10-05T17:38:00.263Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "frequencia-cardiaca-maxima",
+              "main": [
+                "82",
+                "%"
+              ],
+              "label": "da FC máxima prevista (220 − idade)",
+              "raw": {
+                "classic": 170,
+                "tanaka": 173,
+                "pct": 82.35294117647058,
+                "ci": 0.7
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "c0a42d411fc20d7a9683514cf63844d789324ea04cf043640ccfd585df4fb1b8",
+          "bytes": 218,
+          "elapsedMs": 2.790899999992689
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/frequencia-cardiaca-maxima/calculate",
+        "startedAt": "2026-10-05T17:38:00.263Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "frequencia-cardiaca-maxima",
+            "main": [
+              "82",
+              "%"
+            ],
+            "label": "da FC máxima prevista (220 − idade)",
+            "raw": {
+              "classic": 170,
+              "tanaka": 173,
+              "pct": 82.35294117647058,
+              "ci": 0.7
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "c0a42d411fc20d7a9683514cf63844d789324ea04cf043640ccfd585df4fb1b8",
+        "bytes": 218,
+        "elapsedMs": 2.790899999992689
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.classic",
+            "expected": 170,
+            "obtained": 170,
+            "tolerance": 1.7e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.tanaka",
+            "expected": 173,
+            "obtained": 173,
+            "tolerance": 1.73e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.pct",
+            "expected": 82.35294117647058,
+            "obtained": 82.35294117647058,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ci",
+            "expected": 0.7,
+            "obtained": 0.7,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "82",
+            "obtained": "82",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "%",
+            "obtained": "%",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
