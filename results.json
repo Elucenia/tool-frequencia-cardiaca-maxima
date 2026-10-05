@@ -1,0 +1,246 @@
+{
+  "id": "frequencia-cardiaca-maxima",
+  "at": "2026-10-05T17:29:35.916Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/frequencia-cardiaca-maxima/calculator.js",
+    "bytes": 6458,
+    "sha256": "8033545ea242a3168d88463ba8ecf8c7b96be52a64944a8f885d1fdb55f9461d"
+  },
+  "cases": [
+    {
+      "name": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+      "input": {
+        "idade": 50,
+        "fcrep": 70,
+        "fcpico": 160
+      },
+      "obtained": {
+        "id": "frequencia-cardiaca-maxima",
+        "main": [
+          "94",
+          "%"
+        ],
+        "label": "da FC máxima prevista (220 − idade)",
+        "raw": {
+          "classic": 170,
+          "tanaka": 173,
+          "pct": 94.11764705882352,
+          "ci": 0.9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.classic",
+          "expected": 170,
+          "obtained": 170,
+          "tolerance": 0.001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.tanaka",
+          "expected": 173,
+          "obtained": 173,
+          "tolerance": 0.001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.ci",
+          "expected": 0.9,
+          "obtained": 0.9,
+          "tolerance": 0.001,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.classic",
+          "expected": 170,
+          "obtained": 170,
+          "tolerance": 1.7e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tanaka",
+          "expected": 173,
+          "obtained": 173,
+          "tolerance": 1.73e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pct",
+          "expected": 94.11764705882352,
+          "obtained": 94.11764705882352,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ci",
+          "expected": 0.9,
+          "obtained": 0.9,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "94",
+          "obtained": "94",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "%",
+          "obtained": "%",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    },
+    {
+      "name": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+      "input": {
+        "idade": 50,
+        "fcrep": 70,
+        "fcpico": 140
+      },
+      "obtained": {
+        "id": "frequencia-cardiaca-maxima",
+        "main": [
+          "82",
+          "%"
+        ],
+        "label": "da FC máxima prevista (220 − idade)",
+        "raw": {
+          "classic": 170,
+          "tanaka": 173,
+          "pct": 82.35294117647058,
+          "ci": 0.7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.classic",
+          "expected": 170,
+          "obtained": 170,
+          "tolerance": 1.7e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.tanaka",
+          "expected": 173,
+          "obtained": 173,
+          "tolerance": 1.73e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.pct",
+          "expected": 82.35294117647058,
+          "obtained": 82.35294117647058,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ci",
+          "expected": 0.7,
+          "obtained": 0.7,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "82",
+          "obtained": "82",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "%",
+          "obtained": "%",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 34,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

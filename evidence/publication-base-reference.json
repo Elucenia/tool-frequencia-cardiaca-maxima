@@ -1,0 +1,88 @@
+{
+  "id": "frequencia-cardiaca-maxima",
+  "repository": "Elucenia/tool-frequencia-cardiaca-maxima",
+  "branch": "main",
+  "commit": "04a70cf7f9e4a5d23dff17726bf079e6b269a7da",
+  "archiveSha256": "5ecab40b0e8cde092ba849eefbdea561ebe145b0b126e5aab7c91dfb3d780c5e",
+  "protectedFiles": [
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "mode": "100644",
+      "size": 19,
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "mode": "100644",
+      "size": 279,
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "mode": "100644",
+      "size": 42,
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 3363,
+      "sha": "794dc2482978cfa297ad6f9255b8a07e038c28b6",
+      "sha256": "5f778dbcb1a048f042eb2324e378a76264f896de0848671983f1facca6b7abaf"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "mode": "100644",
+      "size": 969,
+      "sha": "285a9eacf33dff8ebfd3f28717278123e3509a1b",
+      "sha256": "3fe2671a4dd2e653363ac7984372ccee56c66870ba8fab3ed3d53637f305adcc"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1477,
+      "sha": "60aa32486218cc5c820c96cd6636172c7a7654db",
+      "sha256": "8eeafad189ecc932f16c31bd9e27d6f4df993920f93ab36fbf50dd29cca67390"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1674,
+      "sha": "43b21f7101996910df0736768a955d7412411eb6",
+      "sha256": "19694aa549dc9a0f811732a9206473155111dd31f588d55bf76df9ab0f6e791a"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 894,
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    }
+  ],
+  "receipt": {
+    "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+    "bytes": 6066154,
+    "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+  },
+  "remoteCodeExecuted": false,
+  "freshBranchReadRequiredBeforePublication": true
+}

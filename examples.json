@@ -1,6 +1,14 @@
 [
   {
-    "label": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+    "id": "frequencia-cardiaca-maxima",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+    "originalInput": {
+      "idade": 50,
+      "fcrep": 70,
+      "fcpico": 160
+    },
     "input": {
       "idade": 50,
       "fcrep": 70,
@@ -14,15 +22,38 @@
       },
       "tol": 0.001
     },
+    "recordedResult": {
+      "main": [
+        "94",
+        "%"
+      ],
+      "label": "da FC máxima prevista (220 − idade)",
+      "raw": {
+        "classic": 170,
+        "tanaka": 173,
+        "pct": 94.11764705882352,
+        "ci": 0.9
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "frequencia-cardiaca-maxima",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
     "originalInput": {
       "idade": 50,
       "fcrep": 70,
-      "fcpico": 160
+      "fcpico": 140
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
     "input": {
       "idade": 50,
       "fcrep": 70,
@@ -31,11 +62,26 @@
     "expected": {
       "level": "high"
     },
-    "originalInput": {
-      "idade": 50,
-      "fcrep": 70,
-      "fcpico": 140
+    "recordedResult": {
+      "main": [
+        "82",
+        "%"
+      ],
+      "label": "da FC máxima prevista (220 − idade)",
+      "raw": {
+        "classic": 170,
+        "tanaka": 173,
+        "pct": 82.35294117647058,
+        "ci": 0.7
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
