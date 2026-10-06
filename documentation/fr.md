@@ -77,3 +77,31 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+FC sous-maximale atteinte (≥ 85%)
+
+| Détails du résultat | |
+| --- | --- |
+| FC maximale (220 − âge) | 170 bpm |
+| FC maximale (Tanaka) | 173 bpm |
+| 85 % de la FC maximale | 145 bpm |
+| Indice chronotrope | 0,90 |
+
+
+### 2
+
+Indice chronotrope < 0,80 : incompétence chronotrope (sans bêtabloquant)
+
+| Détails du résultat | |
+| --- | --- |
+| FC maximale (220 − âge) | 170 bpm |
+| FC maximale (Tanaka) | 173 bpm |
+| 85 % de la FC maximale | 145 bpm |
+| Indice chronotrope | 0,70 |
+

@@ -1,0 +1,167 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "frequencia-cardiaca-maxima",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "1e341f4421dedeacb4505bb0c08b891e27161327",
+    "oldEngineSha256": "8033545ea242a3168d88463ba8ecf8c7b96be52a64944a8f885d1fdb55f9461d",
+    "currentEngineSha256": "a1b7041f1f79f1bea19027ca7fa13687899fd38360ed8917cd203ee7b0390fde"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+      "input": {
+        "idade": 50,
+        "fcrep": 70,
+        "fcpico": 160
+      },
+      "publicOutput": {
+        "id": "frequencia-cardiaca-maxima",
+        "main": [
+          "94",
+          "%"
+        ],
+        "label": "da FC máxima prevista (220 − idade)",
+        "raw": {
+          "classic": 170,
+          "tanaka": 173,
+          "pct": 94.11764705882352,
+          "ci": 0.9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "classic": 170,
+          "tanaka": 173,
+          "ci": 0.9
+        },
+        "tol": 0.001
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "94",
+          "%"
+        ],
+        "label": "da FC máxima prevista (220 − idade)",
+        "level": "low",
+        "verdict": "FC submáxima atingida (≥ 85%)",
+        "rows": [
+          [
+            "FC máxima (220 − idade)",
+            "170 bpm"
+          ],
+          [
+            "FC máxima (Tanaka)",
+            "173 bpm"
+          ],
+          [
+            "85% da FC máxima",
+            "145 bpm"
+          ],
+          [
+            "Índice cronotrópico",
+            "0,90"
+          ]
+        ],
+        "raw": {
+          "classic": 170,
+          "tanaka": 173,
+          "pct": 94.11764705882352,
+          "ci": 0.9
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+      "input": {
+        "idade": 50,
+        "fcrep": 70,
+        "fcpico": 140
+      },
+      "publicOutput": {
+        "id": "frequencia-cardiaca-maxima",
+        "main": [
+          "82",
+          "%"
+        ],
+        "label": "da FC máxima prevista (220 − idade)",
+        "raw": {
+          "classic": 170,
+          "tanaka": 173,
+          "pct": 82.35294117647058,
+          "ci": 0.7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "82",
+          "%"
+        ],
+        "label": "da FC máxima prevista (220 − idade)",
+        "level": "high",
+        "verdict": "Índice cronotrópico < 0,80: incompetência cronotrópica (sem betabloqueador)",
+        "rows": [
+          [
+            "FC máxima (220 − idade)",
+            "170 bpm"
+          ],
+          [
+            "FC máxima (Tanaka)",
+            "173 bpm"
+          ],
+          [
+            "85% da FC máxima",
+            "145 bpm"
+          ],
+          [
+            "Índice cronotrópico",
+            "0,70"
+          ]
+        ],
+        "raw": {
+          "classic": 170,
+          "tanaka": 173,
+          "pct": 82.35294117647058,
+          "ci": 0.7
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

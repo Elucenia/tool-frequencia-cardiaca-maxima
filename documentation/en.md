@@ -77,3 +77,31 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Submaximal HR reached (≥ 85%)
+
+| Result details | |
+| --- | --- |
+| Maximal heart rate (220 − age) | 170 bpm |
+| Maximal heart rate (Tanaka) | 173 bpm |
+| 85% of maximal heart rate | 145 bpm |
+| Chronotropic index | 0.90 |
+
+
+### 2
+
+Chronotropic index < 0.80: chronotropic incompetence (without beta-blocker)
+
+| Result details | |
+| --- | --- |
+| Maximal heart rate (220 − age) | 170 bpm |
+| Maximal heart rate (Tanaka) | 173 bpm |
+| 85% of maximal heart rate | 145 bpm |
+| Chronotropic index | 0.70 |
+

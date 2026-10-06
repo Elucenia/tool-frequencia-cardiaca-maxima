@@ -77,3 +77,31 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+FC submáxima atingida (≥ 85%)
+
+| Detalhes do resultado | |
+| --- | --- |
+| FC máxima (220 − idade) | 170 bpm |
+| FC máxima (Tanaka) | 173 bpm |
+| 85% da FC máxima | 145 bpm |
+| Índice cronotrópico | 0,90 |
+
+
+### 2
+
+Índice cronotrópico < 0,80: incompetência cronotrópica (sem betabloqueador)
+
+| Detalhes do resultado | |
+| --- | --- |
+| FC máxima (220 − idade) | 170 bpm |
+| FC máxima (Tanaka) | 173 bpm |
+| 85% da FC máxima | 145 bpm |
+| Índice cronotrópico | 0,70 |
+

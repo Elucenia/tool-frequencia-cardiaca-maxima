@@ -117,7 +117,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Tanaka 2001:208−0,7 idade; clássica 220−idade; índicecronotrópico reserva Brubaker 2011",
-    "implementationVersion": "frequencia-cardiaca-maxima@native-2026-10-03+8033545ea242",
+    "implementationVersion": "frequencia-cardiaca-maxima@native-2026-10-05+a1b7041f1f79",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/11153730/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -220,13 +220,41 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "8033545ea242a3168d88463ba8ecf8c7b96be52a64944a8f885d1fdb55f9461d",
+      "implementationHash": "a1b7041f1f79f1bea19027ca7fa13687899fd38360ed8917cd203ee7b0390fde",
       "technicalAmendment": {
         "version": "scientific-metric-states-and-discrete-counts-v1",
         "scope": "Explicit infinite/undefined metric state encoding; discrete counts only for NNT and 2×2 tables. Finite formula values, source edition and clinical approval status preserved.",
         "candidateManifestSha256": "b23825d436a8b2af8351515df4605477adb1f2345c194e89b3c0a34c44f1be7d",
         "clinicalApproval": "not-performed"
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "frequencia-cardiaca-maxima@native-2026-10-03+8033545ea242",
+          "previousImplementationHash": "8033545ea242a3168d88463ba8ecf8c7b96be52a64944a8f885d1fdb55f9461d",
+          "implementationHash": "a1b7041f1f79f1bea19027ca7fa13687899fd38360ed8917cd203ee7b0390fde",
+          "scientificBodySha256": "d4cc24b070a10768414b22aeccf57293743e57d54ab9f72fdc3453286c3c71de",
+          "metadataContractHash": "63e2a4adc75e9ad731edc2e31e75a5492ebe61d4e5975cb621373a798f3c37ad",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A equação Tanaka 2001 estima a frequência cardíaca máxima em adultos saudáveis. Sua execução com idade pediátrica demonstra apenas a operação matemática, sem evidência de aplicabilidade clínica nessa população. A frequência prevista não é a frequência máxima individual medida; diagnóstico de incompetência cronotrópica, uso de medicamentos e protocolos de esforço dependem de avaliação e fontes próprias.",
     "sourceLimitEvidence": {
@@ -245,15 +273,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/frequencia-cardiaca-maxima/calculator.js",
-    "bytes": 6458,
-    "sha256": "8033545ea242a3168d88463ba8ecf8c7b96be52a64944a8f885d1fdb55f9461d"
+    "bytes": 6663,
+    "sha256": "a1b7041f1f79f1bea19027ca7fa13687899fd38360ed8917cd203ee7b0390fde"
   },
-  "sourceToolSha256": "d1cdf6e359c1ea54c2ba7c6f8d8e4dc11a4195a3206e7c08afe5ab9df0cd1d04",
+  "sourceToolSha256": "d63ff5608676fa85f56929a8ec1dae5d4978ae418ea8358fb35b482a48076a71",
   "omittedFullReferenceBanks": [
     {
       "rows": 6,
       "sha256": "4267a906d69ec43fc00e61f2d82908a0a27b066ef5a8a1e74c748895fd083596",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

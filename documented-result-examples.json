@@ -1,0 +1,1543 @@
+{
+  "id": "frequencia-cardiaca-maxima",
+  "implementationVersion": "frequencia-cardiaca-maxima@native-2026-10-05+a1b7041f1f79",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "FC máxima (220 − idade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FC máxima (Tanaka)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "85% da FC máxima",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Índice cronotrópico",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,90",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FC submáxima atingida (≥ 85%)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "FC máxima (220 − idade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FC máxima (Tanaka)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "85% da FC máxima",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Índice cronotrópico",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,70",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Índice cronotrópico < 0,80: incompetência cronotrópica (sem betabloqueador)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Maximal heart rate (220 − age)",
+                "locale": "en",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "en",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Maximal heart rate (Tanaka)",
+                "locale": "en",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "en",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "85% of maximal heart rate",
+                "locale": "en",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "en",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Chronotropic index",
+                "locale": "en",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0.90",
+                "locale": "en",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Submaximal HR reached (≥ 85%)",
+            "locale": "en",
+            "template": "documented-authored-1992a2480dcdc4f47e94"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Maximal heart rate (220 − age)",
+                "locale": "en",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "en",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Maximal heart rate (Tanaka)",
+                "locale": "en",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "en",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "85% of maximal heart rate",
+                "locale": "en",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "en",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Chronotropic index",
+                "locale": "en",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0.70",
+                "locale": "en",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Chronotropic index < 0.80: chronotropic incompetence (without beta-blocker)",
+            "locale": "en",
+            "template": "documented-authored-42e25a98b978aa32a4a0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "FC máxima (220 − edad)",
+                "locale": "es",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 lpm",
+                "locale": "es",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FC máxima (Tanaka)",
+                "locale": "es",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 lpm",
+                "locale": "es",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "85% de la FC máxima",
+                "locale": "es",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 lpm",
+                "locale": "es",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Índice cronotrópico",
+                "locale": "es",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0,90",
+                "locale": "es",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FC submáxima alcanzada (≥ 85%)",
+            "locale": "es",
+            "template": "documented-authored-1992a2480dcdc4f47e94"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "FC máxima (220 − edad)",
+                "locale": "es",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 lpm",
+                "locale": "es",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FC máxima (Tanaka)",
+                "locale": "es",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 lpm",
+                "locale": "es",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "85% de la FC máxima",
+                "locale": "es",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 lpm",
+                "locale": "es",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Índice cronotrópico",
+                "locale": "es",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0,70",
+                "locale": "es",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Índice cronotrópico < 0,80: incompetencia cronotrópica (sin betabloqueador)",
+            "locale": "es",
+            "template": "documented-authored-42e25a98b978aa32a4a0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "FC maximale (220 − âge)",
+                "locale": "fr",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "fr",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FC maximale (Tanaka)",
+                "locale": "fr",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "fr",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "85 % de la FC maximale",
+                "locale": "fr",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "fr",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Indice chronotrope",
+                "locale": "fr",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0,90",
+                "locale": "fr",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FC sous-maximale atteinte (≥ 85%)",
+            "locale": "fr",
+            "template": "documented-authored-1992a2480dcdc4f47e94"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "FC maximale (220 − âge)",
+                "locale": "fr",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "fr",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FC maximale (Tanaka)",
+                "locale": "fr",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "fr",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "85 % de la FC maximale",
+                "locale": "fr",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "fr",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Indice chronotrope",
+                "locale": "fr",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0,70",
+                "locale": "fr",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Indice chronotrope < 0,80 : incompétence chronotrope (sans bêtabloquant)",
+            "locale": "fr",
+            "template": "documented-authored-42e25a98b978aa32a4a0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Maximale HF (220 − Alter)",
+                "locale": "de",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "de",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Maximale HF (Tanaka)",
+                "locale": "de",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "de",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "85 % der maximalen HF",
+                "locale": "de",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "de",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Chronotropischer Index",
+                "locale": "de",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0,90",
+                "locale": "de",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Erreichte submaximale HF (≥ 85%)",
+            "locale": "de",
+            "template": "documented-authored-1992a2480dcdc4f47e94"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Maximale HF (220 − Alter)",
+                "locale": "de",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "de",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Maximale HF (Tanaka)",
+                "locale": "de",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "de",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "85 % der maximalen HF",
+                "locale": "de",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "de",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Chronotropischer Index",
+                "locale": "de",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0,70",
+                "locale": "de",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Chronotropischer Index < 0,80: chronotrope Inkompetenz (ohne Betablocker)",
+            "locale": "de",
+            "template": "documented-authored-42e25a98b978aa32a4a0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "FC massima (220 − età)",
+                "locale": "it",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "it",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FC massima (Tanaka)",
+                "locale": "it",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "it",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "85% della FC massima",
+                "locale": "it",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "it",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Indice cronotropico",
+                "locale": "it",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0,90",
+                "locale": "it",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "FC submassima raggiunta (≥ 85%)",
+            "locale": "it",
+            "template": "documented-authored-1992a2480dcdc4f47e94"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "FC massima (220 − età)",
+                "locale": "it",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "it",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FC massima (Tanaka)",
+                "locale": "it",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "it",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "85% della FC massima",
+                "locale": "it",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "it",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Indice cronotropico",
+                "locale": "it",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0,70",
+                "locale": "it",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Indice cronotropico < 0,80: incompetenza cronotropa (senza beta-bloccante)",
+            "locale": "it",
+            "template": "documented-authored-42e25a98b978aa32a4a0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "FC القصوى (220 − العمر)",
+                "locale": "ar",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "١٧٠ bpm",
+                "locale": "ar",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FC القصوى (Tanaka)",
+                "locale": "ar",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "١٧٣ bpm",
+                "locale": "ar",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "85% من FC القصوى",
+                "locale": "ar",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "١٤٥ bpm",
+                "locale": "ar",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "المؤشر الكرونوتروبي",
+                "locale": "ar",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "٠٫٩٠",
+                "locale": "ar",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "تم بلوغ FC تحت القصوى (≥ 85%)",
+            "locale": "ar",
+            "template": "documented-authored-1992a2480dcdc4f47e94"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "FC القصوى (220 − العمر)",
+                "locale": "ar",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "١٧٠ bpm",
+                "locale": "ar",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "FC القصوى (Tanaka)",
+                "locale": "ar",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "١٧٣ bpm",
+                "locale": "ar",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "85% من FC القصوى",
+                "locale": "ar",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "١٤٥ bpm",
+                "locale": "ar",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "المؤشر الكرونوتروبي",
+                "locale": "ar",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "٠٫٧٠",
+                "locale": "ar",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "المؤشر الكرونوتروبي < 0,80: عدم كفاءة كرونوتروبية (من دون حاصر بيتا)",
+            "locale": "ar",
+            "template": "documented-authored-42e25a98b978aa32a4a0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "最大心率（220 − 年龄）",
+                "locale": "zh",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "zh",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "最大心率（Tanaka）",
+                "locale": "zh",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "zh",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "最大心率的 85%",
+                "locale": "zh",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "zh",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "变时性指数",
+                "locale": "zh",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0.90",
+                "locale": "zh",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "达到次最大心率（≥ 85%）",
+            "locale": "zh",
+            "template": "documented-authored-1992a2480dcdc4f47e94"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "最大心率（220 − 年龄）",
+                "locale": "zh",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "zh",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "最大心率（Tanaka）",
+                "locale": "zh",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "zh",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "最大心率的 85%",
+                "locale": "zh",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "zh",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "变时性指数",
+                "locale": "zh",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0.70",
+                "locale": "zh",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "变时性指数 < 0.80：变时性不全（未使用β受体阻滞剂）",
+            "locale": "zh",
+            "template": "documented-authored-42e25a98b978aa32a4a0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "最大心拍数（220 − 年齢）",
+                "locale": "ja",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "ja",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "最大心拍数（Tanaka）",
+                "locale": "ja",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "ja",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "最大心拍数の 85%",
+                "locale": "ja",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "ja",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "変時性指数",
+                "locale": "ja",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0.90",
+                "locale": "ja",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "亜最大心拍数に到達（≥ 85%）",
+            "locale": "ja",
+            "template": "documented-authored-1992a2480dcdc4f47e94"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "最大心拍数（220 − 年齢）",
+                "locale": "ja",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "ja",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "最大心拍数（Tanaka）",
+                "locale": "ja",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "ja",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "最大心拍数の 85%",
+                "locale": "ja",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "ja",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "変時性指数",
+                "locale": "ja",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0.70",
+                "locale": "ja",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "変時性指数 < 0.80：変時性不全（β遮断薬なし）",
+            "locale": "ja",
+            "template": "documented-authored-42e25a98b978aa32a4a0"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "50 anos, FC repouso 70, pico 160: FCmáx 170 (clássica) · 173 (Tanaka) · índice cronotrópico 0,90",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अधिकतम FC (220 − आयु)",
+                "locale": "hi",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "hi",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अधिकतम FC (Tanaka)",
+                "locale": "hi",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "hi",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "अधिकतम FC का 85%",
+                "locale": "hi",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "hi",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "क्रोनोट्रोपिक सूचकांक",
+                "locale": "hi",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0.90",
+                "locale": "hi",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "उप-अधिकतम FC प्राप्त (≥ 85%)",
+            "locale": "hi",
+            "template": "documented-authored-1992a2480dcdc4f47e94"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, FC repouso 70, pico 140: índice < 0,80 (incompetência cronotrópica)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "अधिकतम FC (220 − आयु)",
+                "locale": "hi",
+                "template": "documented-authored-769e384095eb613929be"
+              },
+              "value": {
+                "text": "170 bpm",
+                "locale": "hi",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  170
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "अधिकतम FC (Tanaka)",
+                "locale": "hi",
+                "template": "documented-authored-380f82498ded78af7fff"
+              },
+              "value": {
+                "text": "173 bpm",
+                "locale": "hi",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  173
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "अधिकतम FC का 85%",
+                "locale": "hi",
+                "template": "documented-authored-a34ab53f12c429f4f16c"
+              },
+              "value": {
+                "text": "145 bpm",
+                "locale": "hi",
+                "template": "documented-authored-01c03515ae8f4e0e329d",
+                "sourceNumbers": [
+                  145
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "क्रोनोट्रोपिक सूचकांक",
+                "locale": "hi",
+                "template": "documented-authored-12c0a35b9f14b9a1d044"
+              },
+              "value": {
+                "text": "0.70",
+                "locale": "hi",
+                "template": "documented-authored-eb5cafb246df72a2bcf9",
+                "sourceNumbers": [
+                  0.7
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "क्रोनोट्रोपिक सूचकांक < 0,80: क्रोनोट्रोपिक अपर्याप्तता (बीटा-ब्लॉकर के बिना)",
+            "locale": "hi",
+            "template": "documented-authored-42e25a98b978aa32a4a0"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}
